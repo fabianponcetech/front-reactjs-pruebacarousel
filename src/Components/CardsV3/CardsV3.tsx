@@ -34,8 +34,8 @@ export default function Cards(props: CardsV3Properties): ReactElement {
         const containerWidth: number = cardContainerRef.offsetWidth;
         const intPosition: number = Math.round(getFloatCardPosition(containerWidth, props.cardWidth, cardContainerRef.scrollLeft));
         
-        if (cardContainerRef.scrollLeft  == 0) setScrollPosition(cardContainerRef, props.cardsNumber);
-        else if (cardContainerRef.scrollLeft  == (props.cardsNumber+2)*props.cardWidth-containerWidth) setScrollPosition(cardContainerRef, 1);
+        if (cardContainerRef.scrollLeft  === 0) setScrollPosition(cardContainerRef, props.cardsNumber);
+        else if (cardContainerRef.scrollLeft  === (props.cardsNumber+2)*props.cardWidth-containerWidth) setScrollPosition(cardContainerRef, 1);
         else setPosition(intPosition);
     }
     useEffect(setInitialPosition);
