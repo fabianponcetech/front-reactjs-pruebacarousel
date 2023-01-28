@@ -29,6 +29,9 @@ body {margin-bottom: 10em;}
   height: 100px;
   background-color: cyan;
   text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 3em;
 }
 
 /* CARD V2 */
@@ -49,7 +52,30 @@ body {margin-bottom: 10em;}
   height: 100px;
   background-color: cyan;
   text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 3em;
 }
-.i-cards-v3-container::-webkit-scrollbar {
-  height: 0px;
+
+/* CARD V3 */
+.i-cards-v3-container {
+  background-color: rgb(240, 243, 243);
+  width: 700px;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding-top: 25px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.i-card-v3-item {
+  border: solid 1px black;
+  height: 100px;
+  background-color: cyan;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 3em;
 }

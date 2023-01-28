@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import './App.css';
 import Cards from './Components/Cards/Cards';
 import CardsV2 from './Components/CardsV2/CardsV2';
+import CardsV3 from './Components/CardsV3/CardsV3';
 
 function App(): ReactElement {
   return (
@@ -43,8 +44,16 @@ function App(): ReactElement {
         "
       />
 
-      <h1>Ejemplo 5 (Lv3)</h1>
-      <p>Cards de ancho variable e interacción con scroll horizontal. EN DESARROLLO...</p>
+      <CardsV3
+        containerWidth={700}
+        cardWidth={300}
+        cardsNumber={4}
+        title="Ejemplo 5 (Lv3)"
+        summary="Contenedor de ancho variable que tiene interacción con scroll y botones. Todo para N cards de ancho variable. Se podría perfeccionar la experiencia del usuario a la hora de interactuar con el scroll pero requiere un algoritmo de mayor presión. Tal vez el próximo nivel."
+      />
+
+      <h1>Ejemplo 6 (Lv4)</h1>
+      <p>Fluides en interacción con los límites izquierdo y derecho con el scroll...</p>
     </div>
   );
 }

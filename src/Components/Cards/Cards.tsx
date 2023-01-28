@@ -49,7 +49,7 @@ export default function Cards(props: CardsProperties): ReactElement {
         }
     }
     const setScrollPosition = (ele: HTMLDivElement | null | undefined, position: number): void => {
-        if (ele) ele.scrollLeft =((position-2)*ele.offsetWidth)+ele.offsetWidth
+        if (ele) ele.scrollLeft = ((position-2)*ele.offsetWidth)+ele.offsetWidth
     }
     const getCardContainer = (ref: HTMLDivElement): HTMLDivElement | null | undefined => {
         return ref.closest('.i-cards-component')?.querySelector('.i-cards-container');
