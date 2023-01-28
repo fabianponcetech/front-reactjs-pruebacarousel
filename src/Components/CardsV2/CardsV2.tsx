@@ -4,7 +4,6 @@ import NextCard from "./NextCard";
 import PrevCard from "./PrevCard";
 
 export default function Cards(props: CardsV2Properties): ReactElement {
-
     return (
         <div className="i-cards-v2-component">
         <h1>{props.title}</h1>

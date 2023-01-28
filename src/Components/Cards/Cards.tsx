@@ -6,20 +6,20 @@ import PrevCard from "./PrevCard";
 
 export default function Cards(props: CardsProperties): ReactElement {
     const [position, setPosition]: [number, React.Dispatch<React.SetStateAction<number>>] = useState(1);
-
     const getFloatCardPosition = (containerWidth: number, scrollLeft: number): number => 1/(containerWidth/scrollLeft)+1;
     const scrollHandler = (ele: HTMLDivElement): void => {
         const containerWidth: number = ele.offsetWidth;
         const floatPosition: number = getFloatCardPosition(containerWidth, ele.scrollLeft);
         const toleranceRange: number = 0.3;
+        let intPosition: number;
 
         if (floatPosition%1 < toleranceRange) {
-            let intPosition: number = Math.floor(floatPosition);
+            intPosition = Math.floor(floatPosition);
             setPosition(intPosition);
             setScrollPosition(ele, intPosition);
         }
         else if (1-(floatPosition%1) < toleranceRange) {
-            let intPosition: number = Math.round(floatPosition);
+            intPosition = Math.round(floatPosition);
             setPosition(intPosition);
             setScrollPosition(ele, intPosition);
         }
