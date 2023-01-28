@@ -1,3 +1,6 @@
+/* GLOBAL STYLES */
+h1 {text-align: center;}
+p {text-align: center;}
 .i-prev-next-buttons {
   display: flex;
   width: 700px;
@@ -6,15 +9,9 @@
   font-size: 2em;
   cursor: pointer;
 }
+body {margin-bottom: 10em;}
 
-h1 {
-  text-align: center;
-}
-
-p {
-  text-align: center;
-}
-
+/* CARD V1 */
 .i-cards-container {
   background-color: rgb(240, 243, 243);
   width: 700px;
@@ -23,15 +20,36 @@ p {
   flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: scroll;
-  scrollbar-color: red;
   padding-top: 25px;
   margin: 0 auto;
   margin-bottom: 1em;
 }
-
 .i-card-item {
   border: solid 1px black;
   height: 100px;
   background-color: cyan;
   text-align: center;
+}
+
+/* CARD V2 */
+.i-cards-v2-container {
+  background-color: rgb(240, 243, 243);
+  width: 700px;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  padding-top: 25px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.i-card-v2-item {
+  border: solid 1px black;
+  height: 100px;
+  background-color: cyan;
+  text-align: center;
+}
+*::-webkit-scrollbar {
+  height: 0px;
 }
