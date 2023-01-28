@@ -20,7 +20,7 @@ function App(): ReactElement {
         containerWidth={700}
         cardsNumber={5}
         title="Ejemplo 2"
-        summary="Comprobando que algoritmo de reajuste de scroll funciona para N Cards. En este caso se comprueba el funcionamiento para 5 Cards."
+        summary="Comprobando que el algoritmo de reajuste de scroll funciona para N Cards. En este caso se comprueba el funcionamiento para 5 Cards."
       />
       
       <Cards
@@ -44,6 +44,8 @@ function App(): ReactElement {
         "
       />
 
+      <hr />
+
       <CardsV3
         containerWidth={700}
         cardWidth={300}
@@ -52,8 +54,7 @@ function App(): ReactElement {
         summary="Contenedor de ancho variable que tiene interacción con scroll y botones. Todo para N cards de ancho variable. Se podría perfeccionar la experiencia del usuario a la hora de interactuar con el scroll pero requiere un algoritmo de mayor presión. Tal vez el próximo nivel."
       />
 
-      <h1>Ejemplo 6 (Lv4)</h1>
-      <p>Fluides en interacción con los límites izquierdo y derecho con el scroll...</p>
+      <hr />
     </div>
   );
 }
