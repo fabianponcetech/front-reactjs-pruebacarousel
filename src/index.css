@@ -50,6 +50,6 @@ body {margin-bottom: 10em;}
   background-color: cyan;
   text-align: center;
 }
-*::-webkit-scrollbar {
+.i-cards-v3-container::-webkit-scrollbar {
   height: 0px;
 }
